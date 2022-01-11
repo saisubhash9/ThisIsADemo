@@ -1,1 +1,31 @@
-I am a Software developer and a gamer
+<html>
+<head>
+<title>
+Login page
+</title>
+</head>
+<body>
+<h1>
+Simple Login Page
+</h1>
+<form name="login">
+Username<input type="text" name="userid"/>
+Password<input type="password" name="pswrd"/>
+<input type="button" onclick="check(this.form)" value="Login"/>
+</form>
+<script language="javascript">
+function check(form)
+{
+ 
+ if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd")
+  {
+    window.open('target.html')
+  }
+ else
+ {
+   alert("Error Password or Username")
+  }
+}
+</script>
+</body>
+</html>
